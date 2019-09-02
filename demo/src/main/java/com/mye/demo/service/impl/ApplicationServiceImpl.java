@@ -20,11 +20,11 @@ public class ApplicationServiceImpl implements ApplicationService {
 
     @Override
     public Application selectApplicationById(int id) {
-        return null;
+        return applicationDao.selectById(id);
     }
 
     @Override
-    public int updateApplication(int id, int status) {
-        return 0;
+    public void updateApplication(int id, int status) {
+        applicationDao.updateApplication(id, status);
     }
 }

@@ -24,5 +24,5 @@ public interface ApplicationService {
      * @param status
      * @return
      */
-    public int updateApplication(int id, int status);
+    public void updateApplication(int id, int status);
 }
